@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Médical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dossier Médical</h1>
+    
+    <form action="#" method="post">
+        <label for="patient-name">Nom du Patient</label>
+        <input type="text" id="patient-name" name="patient-name" required>
+
+        <label for="dob">Date de Naissance</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Adresse</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="medical-history">Antécédents Médicaux</label>
+        <textarea id="medical-history" name="medical-history" rows="4" required></textarea>
+
+        <label for="medications">Médicaments Actuels</label>
+        <textarea id="medications" name="medications" rows="4" required></textarea>
+
+        <label for="doctor">Médecin Responsable</label>
+        <input type="text" id="doctor" name="doctor" required>
+
+        <button type="submit">Enregistrer le Dossier</button>
+    </form>
+</div>
+
+</body>
+</html>
